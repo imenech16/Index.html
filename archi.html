@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArchVision 2026 | Architecture du Futur</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+        
+        :root { --accent: #2d3436; --gold: #d4af37; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background: #fdfdfd; color: var(--accent); line-height: 1.8; }
+
+        nav { padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; position: fixed; width: 100%; backdrop-filter: blur(10px); z-index: 1000; background: rgba(255,255,255,0.9); }
+        nav h2 { letter-spacing: 2px; }
+        nav ul { display: flex; list-style: none; gap: 30px; }
+        nav a { text-decoration: none; color: var(--accent); font-weight: 700; }
+
+        .hero { height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; background: radial-gradient(circle, #f0f0f0, #e0e0e0); }
+        .section { padding: 100px 5%; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; }
+        .card { padding: 40px; background: white; border-radius: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid #eee; transition: 0.4s; }
+        .card:hover { transform: translateY(-15px); border-color: var(--gold); }
+
+        .wa-btn { position: fixed; bottom: 40px; right: 40px; width: 60px; height: 60px; background: #25d366; color: white; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-size: 28px; z-index: 2000; }
+        footer { background: #1a1a1a; color: white; padding: 60px; text-align: center; border-radius: 50px 50px 0 0; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h2>ARCH<span style="color:var(--gold)">VISION</span></h2>
+        <ul>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div>
+            <h1>L'avenir de l'architecture commence ici 🏛️</h1>
+            <p>Designs intelligents et durables pour 2026</p>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <h2>Notre Histoire 📖</h2>
+        <p>Nous sommes une agence pionnière, croyant que l'architecture est un art qui façonne l'expérience humaine.</p>
+    </section>
+
+    <section id="services" class="section">
+        <h2 style="text-align: center; margin-bottom: 50px;">Nos Services 🛠️</h2>
+        <div class="grid">
+            <div class="card"><h3>Design Extérieur</h3><p>Façades modernes et innovantes.</p></div>
+            <div class="card"><h3>Architecture Intérieure</h3><p>Espaces qui reflètent votre style.</p></div>
+            <div class="card"><h3>Consultation</h3><p>Expertise technique pour vos projets.</p></div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section">
+        <h2 style="text-align: center;">Nos Réalisations 📸</h2>
+        <div class="grid" style="margin-top: 40px;">
+            <div class="card"><h4>Villa Moderne</h4></div>
+            <div class="card"><h4>Espace Bureau</h4></div>
+        </div>
+		<div class="grid">
+            <div class="card"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Villa"><h3>Villa Moderne</h3></div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688" alt="Interior"><h3>Design Intérieur</h3></div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab" alt="Building"><h3>Architecture Urbaine</h3></div>
+        </div>
+    </section>
+	
+	<!-- Pricing Section -->
+    <section class="section">
+        <h2>Nos Tarifs</h2>
+        <div class="grid">
+            <div class="price-box"><h3>Basique</h3><p style="font-size: 2rem; margin: 20px 0;">500€</p><p>Plans 2D et conseils.</p></div>
+            <div class="price-box" style="background: var(--accent); color: white;"><h3>Premium</h3><p style="font-size: 2rem; margin: 20px 0;">1200€</p><p>Modélisation 3D complète.</p></div>
+        </div>
+    </section>
+	
+	<!-- Testimonials -->
+    <section class="section" style="background: white;">
+        <h2>Avis Clients</h2>
+        <div class="grid">
+            <div class="card"><p>"Service exceptionnel, une vision unique pour ma maison."</p><br><strong>- Sarah M.</strong></div>
+            <div class="card"><p>"Professionnels et très attentifs aux détails."</p><br><strong>- Ahmed K.</strong></div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2 style="text-align: center;">Contactez-nous ✉️</h2>
+        <form action="https://formspree.io/f/mqazkdwg" method="POST" style="max-width: 600px; margin: 40px auto;">
+            <input type="text" name="name" placeholder="Votre Nom" required style="width: 100%; padding: 20px; margin-bottom: 15px; border-radius: 15px; border: 1px solid #ddd;">
+            <input type="email" name="email" placeholder="Votre Email" required style="width: 100%; padding: 20px; margin-bottom: 15px; border-radius: 15px; border: 1px solid #ddd;">
+            <textarea name="message" placeholder="Détails de votre projet..." rows="5" required style="width: 100%; padding: 20px; margin-bottom: 15px; border-radius: 15px; border: 1px solid #ddd;"></textarea>
+            <button type="submit" style="width: 100%; padding: 20px; background: var(--accent); color: white; border: none; border-radius: 15px; cursor: pointer;">Envoyer la demande</button>
+        </form>
+    </section>
+
+    <a href="https://wa.me/213553498296" class="wa-btn" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+    <footer>
+        <p>&copy; 2026 ArchVision | Tous droits réservés</p>
+        <p>Tél : 0553 49 82 96</p>
+    </footer>
+
+</body>
+</html>
